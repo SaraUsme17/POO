@@ -15,6 +15,19 @@ public class Libro {
     private String autor;
     private int numPaginas;
     
+    //Private limita el acceso y controla cómo se puede acceder y modificar la información interna de una clase.
+    //solo puede ser accedido directamente dentro de la propia clase en la que se define. 
+    //No puede ser accesible desde fuera de esa clase, incluso por otras clases del mismo paquete.
+    
+    //Private, public, protected 
+    
+    
+    //CONSTRUCTORES: Métodos especiales que se utilizan para inicializar los atributos de un objeto 
+    //cuando se crea una instancia de la clase
+    
+    //Define como se debe crear y configurar un objeto de una clase específica
+    
+    
     //Constructor por parámetros
 
     public Libro(String ISBN, String titulo, String autor, int numPaginas) {
@@ -30,6 +43,9 @@ public class Libro {
     }
     
     //Getter and Setter
+    //Métodos para acceder y modificar los valores de los atributos de una clase. 
+    //Un getter es un método que se utiliza para obtener el valor actual de un atributo privado de una clase.
+    //Un setter es un método que se utiliza para modificar el valor de un atributo privado de una clase.
 
     public String getISBN() {
         return ISBN;

@@ -14,8 +14,14 @@ import Entidad.Matematica;
 public class MatematicaServicio {
     
     public Matematica crearNum(){
+        
+        //Math.random() genera un número decimal aleatorio en el rango de [0, 1). 
+        //Esto significa que el número generado puede ser 0 pero nunca alcanzará el 1.
+        //Al multiplicar por 100 se obtiene un número decimal aleatorio en el rango de [0, 100)
+        //(int) convierte el resultado de la multiplicación a un entero, eliminando la parte decimal. 
+        //Esto truncará el número decimal generado y dará como resultado un número entero entre 0 (incluido) y 99 (incluido).
  
-        double num1 = (int) (Math.random()*100);
+        double num1 = (int) (Math.random()*100); //Se genera un número aleatorio entre 0 y 99 (ambos inclusive)
         double num2 = (int) (Math.random()*100);
         System.out.println("Número 1: " + num1);
         System.out.println("Número 2: " + num2);
